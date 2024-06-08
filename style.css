@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #333232;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid #f5e4c3;
+  width: 500px;
+  height: 450px;
+  margin-top: 8%;
+  border-radius: 12px;
+  background-color: #0e2431;
+}
+
+.head {
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.head h1 {
+  margin-bottom: 3%;
+}
+
+.content {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.content input[type="number"] {
+  width: 60%;
+  height: 2.5rem;
+  color: black;
+  padding: 2%;
+  border-radius: 5px;
+  border-style: solid;
+}
+.content input[type="number"]:focus {
+  outline: none !important;
+}
+
+.content input[type="button"] {
+  width: 25%;
+  font-size: 1.1rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border-color: black;
+  background-color: rgb(195 244 255 / 83%);
+  color: black;
+}
+.content input[type="button"]:hover {
+  background-color: rgb(195 244 255 / 83%);
+  cursor: pointer;
+}
+
+.output {
+  margin-top: 10%;
+}
+.output h2 {
+  margin: 5% 0px;
+}
+.reload-btn {
+  display: block;
+  width: 60%;
+  font-size: 0.9rem;
+  height: 2rem;
+  border-radius: 5px;
+  border-color: black;
+  background-color: black;
+  color: white;
+  margin-top: 5%;
+  cursor: pointer;
+}
