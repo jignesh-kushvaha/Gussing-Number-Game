@@ -4,7 +4,7 @@ let output = document.getElementById("output");
 let attemptLeft = document.getElementById("attempt-left");
 
 let minNum = 1;
-let maxNum = 10;
+let maxNum = 15;
 
 let randomNumber = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
 
@@ -42,7 +42,7 @@ function gameCompleted() {
   guessbtn.disabled = true;
   guess.value = "";
   guessCount = 0;
-  attemptLeft.textContent = `Guess Number = ${randomNumber}`;
+  attemptLeft.textContent = `Guess Number is ${randomNumber}`;
   let reloadbtn = document.createElement("button");
   reloadbtn.type = "button";
   reloadbtn.textContent = "New Game";
